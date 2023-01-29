@@ -1,4 +1,4 @@
-public class Exercice2 {
+public class Exercise3 {
     public static void main(String[] args) {
         String[][] matrix = {
                 {"09", "08", "05", "04"},
@@ -55,20 +55,5 @@ public class Exercice2 {
             System.out.println();
         }
     }
-
 }
-
-
-// 09   08  05  04
-// 11   45  35  20
-// 32   33  07  00
-
-// 04   05  08  09
-// 20   35  45  11
-// 00   07  33  32
-
-// 09   11  32
-// 08   45  33
-// 05   35  07
-// 04   20  00
 
