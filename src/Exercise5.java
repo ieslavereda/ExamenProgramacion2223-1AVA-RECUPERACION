@@ -71,16 +71,16 @@ public class Exercise5 {
         return tall;
     }
 
-    private static String shortest(String[][] matrix){
+    private static String smallest(String[][] matrix){
         double max = Double.parseDouble(matrix[0][1]);
-        String sho = matrix[0][0];
+        String small = matrix[0][0];
         for (int i = 1; i < matrix.length; i++) {
             if(max > Double.parseDouble(matrix[i][1])) {
                 max = Double.parseDouble(matrix[i][1]);
-                sho = matrix[i][0];
+                small = matrix[i][0];
             }
         }
-        return sho;
+        return small;
     }
 
     public static void main(String[] args) {
@@ -103,7 +103,7 @@ public class Exercise5 {
         System.out.println("Recursively: " + recursiveSearch(heights, name));
         System.out.println("Iteratively: " + iterativeSearch(heights, name));
         System.out.println("Tallest: " + tallest(heights));
-        System.out.println("Shortest: " + shortest(heights));
+        System.out.println("Shortest: " + smallest(heights));
         sc.close();
     }
 
